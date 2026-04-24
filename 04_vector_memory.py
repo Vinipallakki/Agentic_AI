@@ -4,6 +4,7 @@ from langchain_openai import OpenAIEmbeddings
 
 load_dotenv()
 
+
 vectorstore = FAISS.from_texts(
     ["User name is Vinay", "User likes AI","User lives in India",],
     embedding=OpenAIEmbeddings()
